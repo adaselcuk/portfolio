@@ -1,0 +1,156 @@
+body {
+	font-family: 'Calibri', sans-serif;
+	background-color: #320a28;
+	color: #eed7c5;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	scroll-behavior: smooth;
+}
+
+header {
+	color: #eed7c5;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+nav ul {
+	list-style-type:lower-roman;
+	color: #dde8b9;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	gap: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: #eed7c5;
+	font-weight: bold;
+}
+
+.resume-button {
+	background-color: #320a28;
+	color: #eed7c5;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.intro {
+	padding: 100px 20px;
+	margin-top: 80px;
+}
+
+.intro h1 {
+	font-size: 2.5rem;
+	color: #eed7c5;
+}
+
+.intro h2 {
+	font-size: 3.5rem;
+	color: #dde8b9;
+}
+
+.intro h3 {
+	font-size: 2rem;
+	color: #b36a5e;
+	margin: 10px 0;
+}
+
+.intro p {
+	font-size: 1.25rem;
+	margin: 20px 0;
+}
+
+.about {
+    padding: 100px 20px;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+	color: #b36a5e;
+}
+
+.about p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+}
+
+a {
+	color: #b36a5e;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #dde8b9;
+	text-decoration: underline;
+}
+
+#projects {
+	padding: 100px 20px;
+}
+
+.plant-identification-image img {
+	width: 300px;
+	height: auto;
+	border-radius: 8px;
+}
+
+.container {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 20px;
+}
+
+.menu {
+	flex: 1;
+	max-width: 200px;
+	padding: 20px;
+	border-radius: 9px;
+}
+
+.menu ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.menu a {
+	color: #b36a5e;
+	display:block;
+	text-decoration: none;
+	padding: 10px 0;
+	transition: color 0.3s;
+}
+
+.menu a:hover {
+	color: #dde8b9;
+	text-decoration: underline;
+}
+
+.content {
+	flex: 3;
+	padding: 20px;
+	border-radius: 9px;
+}
+
+.content h2 {
+	font-size: 2.5rem;
+	color: #b36a5e;
+}
+
+.content a {
+	color: #b36a5e;
+	text-decoration: none;
+}
+
+.content a:hover {
+	color: #dde8b9;
+	text-decoration: underline;
+}
