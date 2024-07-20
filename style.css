@@ -12,24 +12,84 @@
 body {
 	font-family: 'Basiic', sans-serif;
 	background-color: black;
+	color: #FFF;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	margin: 0;
-	overflow: hidden;
+	overflow-y: auto;
 	display: flex;
-	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
 
-.intro {
-	position: relative;
+header {
 	width: 100%;
-	height: 100px;
-	overflow: hidden;
+	padding: 1em 0;
+	position: absolute;
+	top: 45%;
+	left: 15%;
+	transform: translateY(-50%);
 }
 
-.intro h1 {
+nav ol {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav ol li {
+	margin: 0 20px;
+	font-size: 1.5em;
+}
+
+nav ol li a {
+	text-decoration: none;
+	color: #FFF;
+}
+
+nav ol li a:hover {
+	color: #6dff83;
+}
+
+
+
+main {
+	margin-top: 4em;
+	width: 100%;
+	padding: 1em;
+}
+
+/* .intro {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro .scrolling-text-wrapper {
+	position: relative;
+	margin: 0 auto;
+	display: flex;
+	max-width: 100%;
+	height: 100vh;
+}
+
+.intro .scrolling-text {
+	display: inline-block;
+	overflow: hidden;
+	margin: 0 2em;
+	white-space: nowrap;
+	animation: LeftToRight 10s linear infinite;
+
+} */
+
+.intro .scrolling-text h1 {
 	color: #FFF;
 	text-align: center;
 	font-family: 'Array', sans-serif;
@@ -37,19 +97,31 @@ body {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	top: 750px;
-	bottom: 3015px;
+	width: 1206px;
+	height: 33px;
 	flex-shrink: 0;
-	position: absolute;
-	white-space: nowrap;
-	animation: anim 10s linear infinite;
 }
 
-@keyframes anim {
-	0% {
+/* @keyframes LeftToRight {
+	from {
+		transform: translateX(0%);
+	}
+	to {
 		transform: translateX(100%);
 	}
-	100% {
-		transform: translateX(-100%);
-	}
+} */
+
+.intro h2 {
+	width: 300px;
+	height: 204px;
+	right: 10%;
+	position: absolute;
+	top: 5%;
+	color: #FFFCFC;
+	text-align: right;
+	font-family: basiic;
+	font-size: 2em;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
 }
