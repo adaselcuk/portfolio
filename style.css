@@ -9,6 +9,10 @@
 	src: url(/fonts/ARRAY-REGULAR.OTF) format('opentype');
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Basiic', sans-serif;
 	background-color: black;
@@ -29,6 +33,7 @@ header {
 	top: 55%;
 	left: 15%;
 	transform: translateY(-50%);
+	z-index: 1000;
 }
 
 header nav ol {
@@ -43,12 +48,12 @@ header nav ol {
 header nav ol li {
 	margin: 0 20px;
 	font-size: 1.5em;
-	transition: color 0.25s;
 }
 
 header nav ol li a {
 	text-decoration: none;
 	color: #FFF;
+	transition: color 0.5s;
 }
 
 header nav ol li a:hover {
@@ -94,7 +99,7 @@ main {
 	color: #FFF;
 	text-align: center;
 	font-family: 'Array', sans-serif;
-	font-size: 225px;
+	font-size: 15em;
 	font-style: normal;
 	font-weight: 400;
 	text-align: left;
@@ -102,6 +107,11 @@ main {
 	width: 1206px;
 	height: 10px;
 	flex-shrink: 0;
+	transition: color 1s
+}
+
+.intro .scrolling-text h1:hover {
+	color: #6dff83;
 }
 
 /* @keyframes LeftToRight {
@@ -126,6 +136,11 @@ main {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+	transition: color 1s;
+}
+
+.intro h2:hover {
+	color: #6dff83;
 }
 
 .vertical-line {
