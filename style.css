@@ -26,12 +26,12 @@ header {
 	width: 100%;
 	padding: 1em 0;
 	position: absolute;
-	top: 45%;
+	top: 55%;
 	left: 15%;
 	transform: translateY(-50%);
 }
 
-nav ol {
+header nav ol {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -40,29 +40,30 @@ nav ol {
 	margin: 0;
 }
 
-nav ol li {
+header nav ol li {
 	margin: 0 20px;
 	font-size: 1.5em;
+	transition: color 0.25s;
 }
 
-nav ol li a {
+header nav ol li a {
 	text-decoration: none;
 	color: #FFF;
 }
 
-nav ol li a:hover {
+header nav ol li a:hover {
 	color: #6dff83;
 }
 
 
 
 main {
-	margin-top: 4em;
+	margin-top: 1em;
 	width: 100%;
 	padding: 1em;
 }
 
-/* .intro {
+.intro {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
@@ -72,7 +73,7 @@ main {
 	align-items: center;
 }
 
-.intro .scrolling-text-wrapper {
+/* .intro .scrolling-text-wrapper {
 	position: relative;
 	margin: 0 auto;
 	display: flex;
@@ -96,9 +97,10 @@ main {
 	font-size: 225px;
 	font-style: normal;
 	font-weight: 400;
+	text-align: left;
 	line-height: normal;
 	width: 1206px;
-	height: 33px;
+	height: 10px;
 	flex-shrink: 0;
 }
 
@@ -116,7 +118,7 @@ main {
 	height: 204px;
 	right: 10%;
 	position: absolute;
-	top: 5%;
+	top: 1%;
 	color: #FFFCFC;
 	text-align: right;
 	font-family: basiic;
@@ -124,4 +126,29 @@ main {
 	font-style: normal;
 	font-weight: 500;
 	line-height: normal;
+}
+
+.vertical-line {
+	position: absolute;
+	right: 15%;
+	top: 35%;
+	height: 120px;
+	width: 11px;
+	background-color: #FFF;
+	transform: rotate(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.vertical-line::before {
+    content: '';
+    display: block;
+    height: 10px; 
+}
+
+.vertical-line::after {
+    content: '';
+    display: block;
+    height: 10px;
 }
