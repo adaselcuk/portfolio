@@ -45,18 +45,60 @@ header nav ol {
 	margin: 0;
 }
 
-header nav ol li {
+header.initial-nav nav ol li {
 	margin: 0 20px;
 	font-size: 1.5em;
 }
 
-header nav ol li a {
+header.initial-nav nav ol li a {
 	text-decoration: none;
 	color: #FFF;
 	transition: color 0.5s;
 }
 
-header nav ol li a:hover {
+header.initial-nav nav ol li a:hover {
+	color: #6dff83;
+}
+
+.fixed-nav {
+	position: fixed;
+	top: 0;
+	right: 1em;
+	left: auto;
+	transform: none;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.9) 60%, rgba(0, 0, 0, 0) 100%);
+	/* background-color: black; */
+	transition: top 0.5s, right 0.5s;
+	z-index: 1000;
+	text-decoration: none; 
+	font-size: 1.2em;
+	padding-bottom: 5%;
+}
+
+.fixed-nav nav {
+	text-align: right;
+}
+
+.fixed-nav nav ol {
+	text-align: right;
+	top: 2em;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.fixed-nav nav ol li {
+	display: inline;
+	margin-left: 2em;
+}
+
+.fixed-nav nav ol li a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.5s;
+}
+
+.fixed-nav nav ol li a:hover {
 	color: #6dff83;
 }
 
