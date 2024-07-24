@@ -45,6 +45,10 @@ header nav ol {
 	margin: 0;
 }
 
+.fixed-nav, .initial-nav {
+	transition: opacity 0.5s;
+}
+
 header.initial-nav nav ol li {
 	margin: 0 20px;
 	font-size: 1.5em;
@@ -73,6 +77,8 @@ header.initial-nav nav ol li a:hover {
 	text-decoration: none; 
 	font-size: 1.2em;
 	padding-bottom: 5%;
+	opacity: 1;
+	visibility: visible;
 }
 
 .fixed-nav nav {
@@ -85,6 +91,7 @@ header.initial-nav nav ol li a:hover {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+	justify-content: right;
 }
 
 .fixed-nav nav ol li {
@@ -208,4 +215,19 @@ main {
     content: '';
     display: block;
     height: 10px;
+}
+
+.about-divider {
+	height: 10px;
+	background-color: #6dff83;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.about-divider.visible {
+	opacity: 1;
+}
+
+.about {
+	padding-top: 60px
 }
