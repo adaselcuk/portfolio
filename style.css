@@ -229,5 +229,36 @@ main {
 }
 
 .about {
-	padding-top: 60px
+	padding-left: 2%;
+}
+
+.about h2 {
+	font-size: 3em;
+	font-weight: 500;
+	font-family: Array;
+	position: relative;
+	transition: color 1s;
+}
+
+.about h2:hover {
+	color: #6dff83;
+}
+
+.about p {
+	font-size: 1.2em;
+	font-weight: 300;
+	max-width: 70%;
+}
+
+.highlight {
+	color: #6dff83;
+}
+
+.about a {
+	text-decoration: none;
+	color: #6dff83;
+}
+
+.about a:hover {
+	text-shadow: 0 0 8px #6dff83, 0 0 16px #6dff83, 0 0 24px #6dff83
 }
