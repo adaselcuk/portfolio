@@ -11,12 +11,13 @@ window.addEventListener('scroll', function() {
 
 document.addEventListener('DOMContentLoaded', function() {
 	var aboutLink = document.querySelector('a[href="#about"]');
-	var divider = document.querySelector('.about-divider');
+	var aboutDivider = document.querySelector('.about-divider');
 	var aboutSection = document.querySelector('#about');
 	var projectsLink = document.querySelector('a[href="#projects"]');
 	var projectsSection = document.querySelector('#projects');
 	var contactLink = document.querySelector('a[href="#contact"]');
 	var contactSection = document.querySelector('#contact');
+	var projectsDivider = document.querySelector('.projects-divider');
 
 	function scrollToSection(event, section) {
 		event.preventDefault();
@@ -46,9 +47,18 @@ document.addEventListener('DOMContentLoaded', function() {
 	window.addEventListener('scroll', function() {
 		var aboutSectionTop = aboutSection.getBoundingClientRect().top;
 		if (aboutSectionTop < window.innerHeight && aboutSectionTop >= 0) {
-			divider.classList.add('visible');
+			aboutDivider.classList.add('visible');
 		} else {
-			divider.classList.remove('visible');
+			aboutDivider.classList.remove('visible');
+		}
+	});
+
+	window.addEventListener('scroll', function() {
+		var projectsSectionTop = projectsSection.getBoundingClientRect().top;
+		if (projectsSectionTop < window.innerHeight && projectsSectionTop >= 0) {
+			projectsDivider.classList.add('visible');
+		} else {
+			projectsDivider.classList.remove('visible');
 		}
 	});
 });

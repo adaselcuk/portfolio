@@ -156,7 +156,7 @@ main {
 	width: 1206px;
 	height: 10px;
 	flex-shrink: 0;
-	transition: color 1s
+	transition: color 1s;
 }
 
 .intro .scrolling-text h1:hover {
@@ -261,4 +261,38 @@ main {
 
 .about a:hover {
 	text-shadow: 0 0 8px #6dff83, 0 0 16px #6dff83, 0 0 24px #6dff83
+}
+
+.projects-divider {
+	margin-top: 2em;
+	height: 10px;
+	background-color: #6dff83;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+}
+
+.projects-divider.visible {
+	opacity: 1;
+}
+
+.projects {
+	padding-left: 2%;
+}
+
+.projects h2 {
+	font-size: 3em;
+	font-weight: 500;
+	font-family: Array;
+	position: relative;
+	transition: color 1s;
+}
+
+.projects h2:hover {
+	color: #6dff83;
+}
+
+.projects p {
+	font-size: 1.2em;
+	font-weight: 300;
+	max-width: 70%;
 }
