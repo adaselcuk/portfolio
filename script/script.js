@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	var contactLink = document.querySelector('a[href="#contact"]');
 	var contactSection = document.querySelector('#contact');
 	var projectsDivider = document.querySelector('.projects-divider');
+	var contactDivider = document.querySelector('.contact-divider');
 
 	function scrollToSection(event, section) {
 		event.preventDefault();
@@ -59,6 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
 			projectsDivider.classList.add('visible');
 		} else {
 			projectsDivider.classList.remove('visible');
+		}
+	});
+
+	window.addEventListener('scroll', function() {
+		var contactSectionTop = contactSection.getBoundingClientRect().top;
+		if (contactSectionTop < window.innerHeight) {
+			contactDivider.classList.add('visible');
+		} else {
+			contactDivider.classList.remove('visible');
 		}
 	});
 });
