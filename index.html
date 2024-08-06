@@ -51,39 +51,52 @@
 			
 			<section id="projects" class="projects">
 				<h2>PROJECTS</h2>
-				<div class="container">
-					<div class="menu">
+				<div class="carousel">
+					<!-- <div class="carousel">
 						<ul>
 							<li><a href="plant-identifier">Plant Identifier</a></li>
 							<li><a href="portfolio">Portfolio</a></li>
 						</ul>
-					</div>
-					<div class="content">
-						<div id="plant-identifier" class="project">
+					</div> -->
+					<div class="carousel-container">
+						<div id="plant-identifier" class="carousel-item">
 							<h3>Plant Identifier</h3>
 							<p><strong>June 2024</strong></p>
 							<div class="plant-identification-image">
-								<!-- <img src="images/plantidentifier.png" alt="Plant Identification Website"> -->
+								<img src="images/plantidentifier.png" alt="Plant Identification Website">
 							</div>
 							<div class="plant-identification-description">
 								<p>Visit the website at <a href="https://plant-identification.vercel.app/">plant-identification.vercel.app</a></p>
 								<p>Check out the GitHub repository <a href="https://github.com/adaselcuk/plant-identification">here.</a></p>
+								<p>Developed and deployed a plant identification website where the user can upload an image and get multiple possible identifications.</p>
 								<ul>
-									<li>Developed and deployed a plant identification website where the user can upload an image and get multiple possible identifications.</li>
-									<li>Used HTML, CSS, and Javascript (ES6+), Express.js, Node.js, and RESTful APIs (PlantNet API, Imgur API)</li>
+									<li>JavaScript(ES6+)</li>	
+									<li>Express.js</li>
+									<li>Node.js</li>
+									<li>RESTful APIs</li>
+									<li>HTML</li>
+									<li>CSS</li>
 								</ul>
 							</div>
 						</div>
-						<div id="portfolio" class="project">
+						<div id="portfolio" class="carousel-item">
 							<h3>Portfolio</h3>
 							<p><strong>July 2024</strong></p>
 							<p>Check out the GitHub repository at <a href="https://github.com/adaselcuk/portfolio">here.</a></p>
-							<p>I am currently developing this website and constantly adding new features or working to revamp it.</p>
+							<p>I am currently developing this website and constantly adding new features.</p>
 							<ul>
-								<li>Built, designed, and developed this website using HTML, CSS, and Javascript.</li>
+								<li>JavaScript</li>
+								<li>HTML</li>
+								<li>CSS</li>
 							</ul>
 						</div>
 					</div>
+					<button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+					<button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+				</div>
+				<div class="bottom-nav-carousel">
+					<button onclick="gotoSlide(0)">Plant Identifier</button>
+					<button onclick="gotoSlide(1)">Portfolio</button>
 				</div>
 			</section>
 
