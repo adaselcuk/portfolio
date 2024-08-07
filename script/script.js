@@ -71,4 +71,44 @@ document.addEventListener('DOMContentLoaded', function() {
 			contactDivider.classList.remove('visible');
 		}
 	});
+
+	showSlide(currentSlide);
 });
+
+let currentSlide = 0;
+
+function showSlide(index) {
+	const slides = document.querySelectorAll('.carousel-item');
+	const totalSlides = slides.length;
+
+	if (index >= totalSlides) {
+		currentSlide = 0;
+	} else if (index < 0) {
+		currentSlide = totalSlides - 1;
+	} else {
+		currentSlide = index;
+	}
+
+	slides.forEach((slide, i) => {
+		slide.classList.remove('active');
+		if (i === currentSlide) {
+			slide.classList.add('active');
+		}
+	});
+
+	const carousel = document.querySelector('.carousel');
+	const offset = -currentSlide * 100;
+	carousel.style.transform = `translateX(${offset}%)`;
+}
+
+function nextSlide() {
+	showSlide(currentSlide + 1);
+}
+
+function previousSlide() {
+	showSlide(currentSlide - 1);
+}
+
+function goToSlide(index) {
+	showSlide(index);
+}

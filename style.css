@@ -380,14 +380,14 @@ main {
 	right: 10px;
 }
 
-.bottom-nav {
+.bottom-nav-carousel {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	margin-top: 2em;
 }
 
-.bottom-nav button {
+.bottom-nav-carousel button {
 	background-color: rgba(0, 0, 0, 0.5);
 	color: #FFF;
 	border: none;
@@ -397,6 +397,7 @@ main {
 	transition: background-color 0.3s;
 }
 
-.bottom-nav button:hover {
+.bottom-nav-carousel button:hover {
 	background-color: #6dff83;
+	color:rgba(0, 0, 0, 1)
 }
