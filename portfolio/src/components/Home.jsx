@@ -8,14 +8,6 @@ const Home = () => {
 		<>
 			<VerticalNavbar />
 			<div className="home-container">
-				<nav className="navbar">
-					<ul className="nav-list">
-						<li className="nav-item"><a href="#about">about</a></li>
-						<li className="nav-item"><a href="#projects">projects</a></li>
-						<li className="nav-item"><a href="#notes">notes</a></li>
-						<li className="nav-item"><a href="#contact">contact</a></li>
-					</ul>
-				</nav>
 				<header className="header">
 					<p className="greeting">Hi! I am</p>
 					<h1 className="name">
