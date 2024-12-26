@@ -10,13 +10,15 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <section id="home">
-          <Home />
-        </section>
-        <section id="about">
-          <About />
-        </section>
+      <div className="App" >
+        <div className="scroll-container">
+          <section id="home">
+            <Home />
+          </section>
+          <section id="about">
+            <About />
+          </section>
+        </div>
       </div>
     </>
   )
